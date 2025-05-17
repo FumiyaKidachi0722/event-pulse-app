@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "eslint \"src/**/*.{js,ts,tsx}\" --fix --quiet"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.9",
