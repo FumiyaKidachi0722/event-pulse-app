@@ -1,0 +1,16 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/*.py": { "maxDuration": 30 }
+  },
+  "routes": [
+    {
+      "src": "/api/hello",
+      "dest": "/api/hello.py"
+    },
+    {
+      "src": "/api/get_stock",
+      "dest": "/api/get_stock.py"
+    }
+  ]
+}
