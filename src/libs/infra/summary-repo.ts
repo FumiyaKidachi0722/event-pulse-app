@@ -1,5 +1,6 @@
 // src/libs/infra/summary-repo.ts
 import admin from "firebase-admin";
+
 import type { SummaryItem } from "@/libs/usecases/fetchSummary";
 
 // 環境変数チェック

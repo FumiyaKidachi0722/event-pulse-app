@@ -1,9 +1,10 @@
 // src/components/layout/Sidebar.tsx
 "use client";
 
+import { Home, BarChart, Settings, LogOut } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, BarChart, Settings, LogOut } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
 
 const navItems = [

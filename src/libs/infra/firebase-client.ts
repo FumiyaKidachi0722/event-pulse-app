@@ -1,8 +1,8 @@
 // src/libs/infra/firebase-client.ts
-import { initializeApp, FirebaseApp } from "firebase/app";
 import { getAnalytics, Analytics } from "firebase/analytics";
-import { getFirestore, Firestore } from "firebase/firestore";
+import { initializeApp, FirebaseApp } from "firebase/app";
 import { getAuth, Auth } from "firebase/auth";
+import { getFirestore, Firestore } from "firebase/firestore";
 
 const clientConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY!,

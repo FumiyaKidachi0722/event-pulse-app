@@ -1,6 +1,8 @@
 // src/components/layout/Header.tsx
 "use client";
 
+import { LogOut } from "lucide-react";
+
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import {
   DropdownMenu,
@@ -8,7 +10,6 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
-import { LogOut } from "lucide-react";
 
 export default function Header() {
   return (

@@ -1,7 +1,8 @@
 // src/app/api/summary/route.ts
 import { NextResponse } from "next/server";
-import type { SummaryItem } from "@/libs/usecases/fetchSummary";
+
 import { getSummaryData } from "@/libs/infra/summary-repo";
+import type { SummaryItem } from "@/libs/usecases/fetchSummary";
 
 export async function GET(request: Request) {
   const url = new URL(request.url);

@@ -1,9 +1,10 @@
 // src/app/layout.tsx
 import "./globals.css";
-import { ReactNode } from "react";
 import { Inter } from "next/font/google";
-import Sidebar from "@/components/layout/Sidebar";
+import { ReactNode } from "react";
+
 import Header from "@/components/layout/Header";
+import Sidebar from "@/components/layout/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
