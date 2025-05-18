@@ -64,6 +64,7 @@ export default function DashboardPage() {
     setStockData(null);
     try {
       const result = await fetchStock(tickerInput);
+      console.log("result:", result);
       setStockData(result);
     } catch (err: unknown) {
       const message = err instanceof Error ? err.message : "不明なエラー";
@@ -104,7 +105,7 @@ export default function DashboardPage() {
               </label>
               <Input
                 id="ticker-input"
-                placeholder="例: AAPL"
+                placeholder="例: 9831.T"
                 value={tickerInput}
                 onChange={(e) => setTickerInput(e.target.value.toUpperCase())}
               />
